@@ -121,6 +121,17 @@ class _LoginState extends State<Login> {
                     child: const Text('Login'),
                   ),
                 ),
+                const SizedBox(height: 15),
+                Center(
+                  child: Text(
+                    'Forgot Password?',
+                    style: GoogleFonts.montserrat(
+                      fontSize: 16,
+                      color: const Color(0xFF4A4458),
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
