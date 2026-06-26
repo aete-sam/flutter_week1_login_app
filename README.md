@@ -1,103 +1,45 @@
-# Flutter Login App
+# Flutter Login & Dashboard App
 
-A Flutter login screen built for the DevelopersHub Corporation internship project.
+A mobile-optimized Flutter application built for the DevelopersHub Corporation internship project. The app features a premium Light Theme, simple credentials authentication, and a dedicated welcome dashboard.
 
-> This app is part of the DevelopersHub Corporation internship program.
+## Screenshots
 
-## Project Overview
-
-This app demonstrates a simple login UI with validation and custom styling. The main screen uses a branded illustration and custom fonts to match a polished mobile login experience.
-
-## App Structure
-
-- `lib/main.dart`
-  - App entry point that launches the `Login` screen.
-- `lib/screens/login.dart`
-  - Primary login screen.
-  - Uses `GoogleFonts` to display `Montserrat` text.
-  - Includes email/password input fields with underline styling and suffix icons.
-  - Validates email format and checks that password is not empty.
-  - Contains a login button and a `Forgot Password?` label.
-- `lib/screens/home.dart`
-  - Simple destination screen shown after successful login.
-  - Displays a welcome message for DevelopersHub Co.
+| Login Screen | Welcome Home Screen |
+| :---: | :---: |
+| ![Login Screen](assets/images/login.png) | ![Home Screen](assets/images/home.png) |
 
 ## Features
 
-- Custom login UI with an illustration from `assets/illustrations/login-back.png`
-- `Montserrat` font styling via `google_fonts`
-- Email address field with format validation
-- Password field with non-empty validation
-- Underline input fields with icon support
-- Full-width login button
-- `Forgot Password?` text below the login button
-- Navigation to a simple home screen after login
+- **Premium Light Theme**: Custom Light Theme using Google Fonts (Montserrat) with subtle borders, clean rounded card shapes, and soft color accents.
+- **Mobile-Optimized Layout**: Centered credential cards with appropriate paddings and viewports for mobile screens.
+- **Form Validations**: Real-time validation for email address format and password length requirements (minimum 6 characters).
+- **Show/Hide Password**: Obscure text toggle button built into the password field.
+- **Simulated Loading State**: Pressing "Login" triggers a 1.5-second loading indicator animation to simulate network requests.
+- **Clean Welcome Screen**: Minimalist dashboard welcoming the user to the DevelopersHub Cooperation Internship, equipped with a top AppBar and logout actions.
 
-## Dependencies
+## App Structure
 
-- `flutter`
-- `google_fonts`
-- `font_awesome_flutter` (added in `pubspec.yaml`)
-- `cupertino_icons`
-
-## Assets
-
-- `assets/illustrations/login-back.png`
-  - Registered in `pubspec.yaml`
-  - Displayed on the login screen
-
-## Setup
-
-1. Install Flutter: https://flutter.dev/docs/get-started/install
-2. Open the project folder.
-3. Fetch dependencies:
-
-```bash
-flutter pub get
-```
-
-4. Run the app:
-
-```bash
-flutter run
-```
-
-## Notes
-
-- The login button currently navigates to `Home` without real authentication.
-- Adjust UI and validation rules in `lib/screens/login.dart`.
-- Add additional screens or backend logic as needed for a completed app.
-
-- Custom login screen with a splash illustration
-- `Montserrat` font styling using the `google_fonts` package
-- Styled email and password fields with underline input borders and suffix icons
-- Email validation for proper email format
-- Password validation to ensure the field is not empty
-- A full-width login button
-- A `Forgot Password?` label below the login button
-
-## Assets
-
-- Uses an image asset from `assets/illustrations/login-back.png`
-- Ensure the asset path is included in `pubspec.yaml`
+- `lib/main.dart` - Application entry point configuring the global Material 3 light theme and Google Fonts.
+- `lib/screens/login.dart` - Clean, centered credentials login page containing the validated email and password inputs.
+- `lib/screens/home.dart` - Centered welcome landing screen featuring the logo icon, greeting, and logout systems.
 
 ## Getting Started
 
-1. Install Flutter if you have not already: https://flutter.dev/docs/get-started/install
-2. Fetch dependencies:
+### Prerequisites
+
+Make sure you have Flutter SDK installed. If not, follow the [Flutter Installation Guide](https://flutter.dev/docs/get-started/install).
+
+### Run the Application
+
+1. Clone or download this project folder.
+2. Fetch the required dependencies:
 
 ```bash
 flutter pub get
 ```
 
-3. Run the app:
+3. Launch the app on your connected mobile device, emulator, or browser:
 
 ```bash
 flutter run
 ```
-
-## Notes
-
-- The login button currently navigates to the `Home` screen when pressed.
-- You can customize colors, fonts, and layout in `lib/screens/login.dart`.
-
